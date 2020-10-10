@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+} 
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(115deg,#000000 , #F5282C );
+}
+.tarjeta {
+	position: relative;
+	width: 740px;
+	height: 370px;
+	margin: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-top-left-radius: 40px 40px;
+}
+.tarjeta img{
+	position: absolute;
+	left:100px;
+	bottom: 0;
+	transform: translateX(-40%);
+	width: 648px;
+	height: 368px;
+	/*transition: 0.9s;*/
+}
+/*.tarjeta:hover img{
+	left: 36%;
+	height: 410px;
+}*/
+.tarjeta .contenido{
+	position: absolute;
+	width: 50%;
+	left: 60%;
+	top: 0;
+	opacity: 0;
+	/*transition:0.9s;
+	opacity: 0;
+	visibility: hidden;*/
+}
+/*.tarjeta:hover .contenido{
+
+	opacity: 1;
+	visibility: visible;
+	left: 45%;
+}*/
+.tarjeta .contenido h2{
+	color: #fff;
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+	font-size: 2.5em;
+	line-height: 1.2em;
+}
+.tarjeta .contenido strong{
+font-family: 'Play', sans-serif;
+}
+.tarjeta .contenido p{
+	position: relative;
+	padding-top: 10px;
+	color: #fff;
+	font-size-adjust: 35px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 25px;
+}
+.tarjeta .contenido a{
+	position: relative;
+	top: 80px;
+	left: 130px;
+	color: #111;
+	display: inline-block;
+	padding: 10px 15px;
+	border-radius: 10px;
+	background:#fff;
+	margin-top: 10px;
+	text-decoration: none;
+	font-family: 'Prata', serif;
+	cursor: pointer;
+}
